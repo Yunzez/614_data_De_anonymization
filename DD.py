@@ -1,16 +1,10 @@
 import pandas as pd
 from geopy.geocoders import Nominatim
+from tqdm import tqdm  # For progress bar
 
 # Load the dataset
-df = pd.read_csv("DriverIDWash.csv")
+df = pd.read_csv("DriverIDWash_2023_2024.csv")
 
-# Filter for 2023-2024 data only
-df = df[df['Year'].isin([2023, 2024])]
-
-# Parse 'Card Origin' into Latitude and Longitude
-df[['Longitude', 'Latitude']] = df['Card Origin'].str.extract(r'POINT \(([^ ]+) ([^ ]+)\)').astype(float)
-
-print("Latitude, longitude columns created")
 # Initialize Geolocator
 geolocator = Nominatim(user_agent="reverse_geocoder")
 
@@ -22,10 +16,8 @@ def get_state_country(lat, lon):
         state = address.get('state', 'Unknown')
         country = address.get('country', 'Unknown')
         return state, country
-    except Exception as e:
+    except Exception:
         return "Unknown", "Unknown"
-
-print("geocoding done.")
 
 # Create a cache to store already processed coordinates
 cache = {}
@@ -39,9 +31,21 @@ def get_state_country_cached(lat, lon):
         cache[coord] = result
         return result
 
-# Apply the function to add 'State' and 'Country' columns
-# Apply the function with caching
-#  
+# Remove duplicate coordinates to reduce geocoding workload
+unique_coords = df[['Latitude', 'Longitude']].drop_duplicates()
+
+# Apply geocoding to unique coordinates
+tqdm.pandas()  # Add progress bar to track progress
+unique_coords[['State', 'Country']] = unique_coords.progress_apply(
+    lambda row: get_state_country_cached(row['Latitude'], row['Longitude']), axis=1, result_type="expand"
+)
+
+# Merge the results back to the original DataFrame
+df = df.merge(unique_coords, on=['Latitude', 'Longitude'], how='left')
+
+# Drop Latitude and Longitude columns if no longer needed
+df = df.drop(columns=['Latitude', 'Longitude'])
+
 # Save the updated DataFrame
 df.to_csv("DriverIDWash_2023_2024_with_State_Country.csv", index=False)
 
