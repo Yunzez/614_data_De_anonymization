@@ -1,17 +1,29 @@
 import pandas as pd
 from geopy.geocoders import Nominatim
 from tqdm import tqdm  # For progress bar
+import re  # To parse coordinates
 
 # Load the dataset
-df = pd.read_csv("DriverIDWash_2023_2024.csv")
+df = pd.read_csv("DriverIDWash_2023_2024_with_State_Country.csv")
 
 # Initialize Geolocator
-geolocator = Nominatim(user_agent="reverse_geocoder")
+geolocator = Nominatim(user_agent="reverse_geocoder", timeout=10)
 
-# Function to get State and Country from coordinates (exclude City)
+# Function to extract latitude and longitude from "Card Origin"
+def extract_coordinates(card_origin):
+    match = re.search(r"POINT \(([-\d\.]+) ([-\d\.]+)\)", card_origin)
+    if match:
+        lon, lat = map(float, match.groups())
+        return lat, lon
+    return None, None
+
+# Extract latitude and longitude into separate columns
+df[['Latitude', 'Longitude']] = df['Card Origin'].apply(lambda x: pd.Series(extract_coordinates(x)))
+
+# Function to get State and Country from coordinates
 def get_state_country(lat, lon):
     try:
-        location = geolocator.reverse((lat, lon), exactly_one=True)
+        location = geolocator.reverse((lat, lon), exactly_one=True, language="en")
         address = location.raw.get('address', {})
         state = address.get('state', 'Unknown')
         country = address.get('country', 'Unknown')
