@@ -1,0 +1,203 @@
+Country,State_y,Count
+United States,Texas,2698
+United States,California,2368
+United States,Arizona,2196
+United States,Florida,1525
+United States,Oregon,1342
+United States,New York,1270
+United States,Georgia,1119
+United States,North Carolina,1094
+Canada,Saskatchewan,1080
+United States,Colorado,998
+United States,Hawaii,989
+Mexico,Zacatecas,923
+Ukraine,Kirovohrad Oblast,879
+United States,Minnesota,843
+United States,Utah,830
+United States,Michigan,747
+Venezuela,Bolivar State,712
+United States,New Jersey,683
+United States,Tennessee,628
+United States,Montana,572
+United States,Oklahoma,538
+United States,Wisconsin,523
+Colombia,Unknown,514
+United States,Maryland,503
+United States,Kansas,503
+United States,Ohio,490
+United States,Pennsylvania,480
+United States,Idaho,430
+United States,Alaska,430
+United States,South Carolina,424
+India,Maharashtra,421
+Kyrgyzstan,Naryn Region,372
+Russia,Krasnoyarsk Krai,365
+United States,Louisiana,357
+United States,Iowa,353
+United States,Alabama,336
+United States,Missouri,330
+China,Gansu,315
+South Korea,Unknown,315
+United States,Illinois,274
+United States,Indiana,274
+United States,Nevada,238
+Japan,Unknown,216
+United States,South Dakota,212
+United States,Virginia,205
+United States,Nebraska,192
+Germany,Thuringia,169
+United States,North Dakota,166
+United States,Guam,163
+Unknown,Unknown,161
+United States,District of Columbia,141
+United States,Connecticut,139
+Nicaragua,Matagalpa,136
+United States,Kentucky,134
+United States,Mississippi,133
+United States,Massachusetts,121
+United States,New Hampshire,117
+Guatemala,Alta Verapaz,116
+Romania,Unknown,103
+United States,Puerto Rico,100
+Taiwan,Unknown,100
+Eritrea,Northen Red Sea Region,90
+United States,Vermont,86
+United States,New Mexico,82
+Brazil,Mato Grosso,78
+United States,Maine,76
+United States,Delaware,69
+Kenya,Meru County,66
+Philippines,Romblon,64
+United Kingdom,Scotland,58
+United States,Arkansas,57
+Turkey,Unknown,56
+Kazakhstan,Ulytau Region,56
+Uzbekistan,Navoiy Region,55
+El Salvador,Cabañas,50
+Serbia,Central Serbia,49
+Indonesia,Central Kalimantan,48
+Tanzania,Singida Region,40
+Honduras,Olancho,39
+Moldova,Unknown,39
+Ethiopia,Oromia Region,37
+United States,Wyoming,37
+Somalia,Galgaduud,37
+United States,West Virginia,35
+Turkmenistan,Ahal Region,35
+Senegal,Unknown,31
+Malawi,Nkhotakota,27
+Haiti,Artibonite Department,25
+Marshall Islands,Ratak Chain,23
+Australia,Unknown,23
+South Africa,Northern Cape,22
+Costa Rica,Unknown,22
+Belarus,Minsk Region,21
+Chile,Maule Region,21
+Spain,Community of Madrid,20
+Peru,Huánuco,20
+Italy,Lazio,19
+Angola,Malanje Province,19
+The Gambia,Lower River Division,18
+Israel,South District,17
+Uganda,Nakasongola,16
+Ghana,Bono East Region,16
+United Arab Emirates,Abu Dhabi Emirate,14
+Ecuador,Morona Santiago,14
+United States,Rhode Island,13
+Democratic Republic of the Congo,Kasai,13
+Bolivia,Santa Cruz,13
+Guinea,Kankan Region,12
+Singapore,Unknown,12
+Pakistan,Balochistan,12
+Georgia,Imereti,11
+Iran,Yazd Province,10
+Tajikistan,Districts of Republican Subordination,10
+Thailand,Unknown,9
+Nigeria,Nasarawa State,9
+Jordan,Maan,9
+New Zealand,Wellington,9
+Jamaica,Unknown,8
+Ireland,Unknown,8
+Palau,Melekeok,8
+Morocco,Unknown,8
+Lithuania,Kaunas County,8
+Austria,Styria,7
+Mauritania,Adrar,7
+Vietnam,Gia Lai Province,7
+Czechia,Southeast,7
+North Macedonia,Unknown,7
+Dominican Republic,Monte Plata,6
+Sweden,Unknown,5
+Qatar,Al Shahaniya,5
+Myanmar,Sagaing Region,4
+Azerbaijan,Unknown,4
+Bosnia and Herzegovina,Federation of Bosnia and Herzegovina,4
+Argentina,La Pampa,4
+Latvia,Unknown,4
+Nepal,Gandaki Province,4
+Bulgaria,Stara Zagora,4
+Switzerland,Obwalden,4
+Sudan,North Kordofan State,4
+Cuba,Camagüey,4
+Finland,Central Finland,3
+France,Nouvelle-Aquitaine,3
+United States,United States Virgin Islands,3
+Zambia,Copperbelt Province,3
+Cambodia,Kampong Thom,3
+Burkina Faso,Unknown,3
+Dominica,Saint Joseph Parish,3
+Zimbabwe,Midlands Province,3
+Belize,Belize District,3
+Albania,Central Albania,3
+Trinidad and Tobago,Tunapuna-Piarco,3
+Kuwait,Jahra Governorate,2
+Namibia,Omaheke,2
+Rwanda,Southern Province,2
+Poland,Łódź Voivodeship,2
+Croatia,Unknown,2
+Oman,Ad Dhahirah Governorate,2
+Norway,Unknown,2
+Netherlands,Utrecht,2
+Estonia,Unknown,2
+Hungary,Unknown,2
+Eswatini,Manzini Region,2
+Malaysia,Pahang,2
+Luxembourg,Unknown,2
+Antigua and Barbuda,Antigua,2
+Greece,Thessaly and Central Greece,2
+Lebanon,Beqaa Governorate,2
+Guyana,Potaro-Siparuni,2
+Saudi Arabia,Riyadh Region,2
+Uruguay,Tacuarembó,1
+Afghanistan,Ghazni Province,1
+Tonga,Tongatapu,1
+Fiji,Northern,1
+Algeria,Adrar,1
+Armenia,Ararat Province,1
+Bahamas,Unknown,1
+Bahrain,Southern Governorate,1
+Belgium,Hainaut,1
+Benin,Borgou Department,1
+Botswana,Ghanzi District,1
+Brunei,Unknown,1
+Cameroon,Adamawa,1
+Cyprus,Cyprus,1
+Côte d'Ivoire,Vallée du Bandama,1
+Denmark,Central Denmark Region,1
+Djibouti,Tadjourah,1
+Iraq,Al-Anbar Governorate,1
+Syria,Homs Governorate,1
+Liberia,Grand Bassa County,1
+Libya,District of Al-Jufra,1
+Madagascar,Itasy Region,1
+Mali,Unknown,1
+Niger,Unknown,1
+Panama,Coclé,1
+Papua New Guinea,Southern Highlands,1
+Saint Lucia,Castries,1
+Saint Vincent and the Grenadines,Unknown,1
+Sierra Leone,Tonkolili District,1
+Slovakia,Region of Banská Bystrica,1
+Slovenia,Unknown,1
+Sri Lanka,Central Province,1
+Palestinian Territory,Judea and Samaria,1
