@@ -5,7 +5,7 @@ import re  # To parse coordinates
 
 # Load the dataset
 df = pd.read_csv("DriverIDWash_2023_2024_with_State_Country.csv")
-
+df = df[(df['Card Type Issued'] == 'Driver License')]
 # Initialize Geolocator
 geolocator = Nominatim(user_agent="reverse_geocoder", timeout=10)
 

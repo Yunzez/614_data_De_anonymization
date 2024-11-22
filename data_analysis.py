@@ -1,5 +1,6 @@
 import pandas as pd
 
+# initial data analysis 
 # Load the updated dataset with State and Country information
 df = pd.read_csv("DriverIDWash_2023_2024_with_State_Country.csv")
 

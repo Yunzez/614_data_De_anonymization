@@ -1,15 +1,16 @@
 import praw
 from datetime import datetime, timezone
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
+client_secret = os.getenv("CLIENT_SECRET")
+reddit_client_id = os.getenv("CLIENT_KEY")
 # Configure PRAW with your credentials
-reddit = praw.Reddit(
-    client_id="kiHWiz4jZLG5q_e3-3UWaA",
-    client_secret="EWsqHiQJXWqsoraEWSCZVMZJP-VYjA",
-    user_agent="614demo"
-)
+reddit = praw.Reddit(client_id=reddit_client_id, client_secret=client_secret, user_agent="614demo")
 
 # Define keywords to search for
-keywords = ["out of state drivers license transfer", "Transfer out of state drivers license"]
+keywords = ["Transfer out of state drivers license to WA", "Taiwan"]
 
 # Dynamically build the search query
 search_query = " OR ".join(keywords)  # Combine keywords with 'OR'
