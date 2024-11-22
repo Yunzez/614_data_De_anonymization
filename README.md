@@ -54,19 +54,22 @@ we filtered by:
 ```markdown
 then, we utilize the car transaction data trying to correlate what car they may have purchased around this time:
 
-| Make           | Count |
-|----------------|-------|
-| TOYOTA         | 129   |
-| SUBARU         | 106   |
-| HONDA          | 69    |
-| FORD           | 65    |
-| CHEVROLET      | 63    |
-| TESLA          | 56    |
-| JEEP           | 40    |
-| KIA            | 40    |
-| NISSAN         | 37    |
-| BMW            | 35    |
-| MAZDA          | 34    |
+```markdown
+| Make       | Count |
+|------------|-------|
+| SUBARU     | 151   |
+| TOYOTA     | 137   |
+| TESLA      | 81    |
+| FORD       | 77    |
+| CHEVROLET  | 69    |
+| HONDA      | 66    |
+| KIA        | 54    |
+| BMW        | 52    |
+| HYUNDAI    | 48    |
+| JEEP       | 47    |
+| MAZDA      | 46    |
+```
+```
 ```
 
 Driver Licenses and ID Cards Transferred to Washington has became not helpful as they are extremly generic and hard to link to identifiable information even based on assumptions. You can see in the dataset named DriverIDWash_2023_2024_NewYork_in_King.csv
@@ -89,7 +92,8 @@ Driver Licenses and ID Cards Transferred to Washington has became not helpful as
 
 ---
 
-## We did find one individual that might potentially matches this creteria of birth year, sex, and moving pattern through linkedin and X(twitter) after a very time consuming search, but we will not disclose their identity here.
+## Social Media Queries
+Using the LinkedIn API, we identified one individual who likely matches a record in the dataset. The match was based on inferred demographic and geographic attributes, including City and Year of Birth, aligning with publicly available professional information.
 
 ## **What to Do Next (Hypothetical Exploration)**
 To further the exploration and enhance the de-anonymization attack, leveraging external data sources could provide additional insights. However, due to ethical concerns, we will not proceed with pinpointing any individuals. Hypothetically, the following steps could be taken if ethical and legal permissions were obtained:
@@ -136,5 +140,3 @@ To further the exploration and enhance the de-anonymization attack, leveraging e
 
 ### **Final Decision**
 We will stop the exploration here due to ethical concerns. This exercise highlights the potential privacy risks when combining seemingly anonymized datasets with auxiliary information. It also underscores the need for stricter data anonymization standards and responsible data usage. 
-
-Let me know if you'd like assistance with ethical data analysis approaches or privacy-preserving techniques. 🚀

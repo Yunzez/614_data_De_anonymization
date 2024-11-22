@@ -49,7 +49,7 @@ filtered_df = df.progress_apply(
         row['Vehicle Type'] in ["PASSENGER CAR", "MULTIPURPOSE PASSENGER VEHICLE (MPV)"] and
         row['Vehicle Primary Use'] == "Passenger Vehicle" and
         row['County'] == "King" and
-        row["Model Year"] >= 2004 and
+        row["Model Year"] >= 2010 and
         row["Owner Type"] == "Individual Owner" and
         (row["Transaction Type"] == "Original Registration" or row["Transaction Type"] == "Registration at time of Transfer")
     ), 
